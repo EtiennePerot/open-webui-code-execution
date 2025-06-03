@@ -257,6 +257,8 @@ class _Tools:
                 if output:
                     output = output.strip()
                     execution_tracker.set_output(output)
+                else:
+                    execution_tracker.set_output("None")
                 if debug:
                     per_file_logs = {}
 
